@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="30sp"
+    tools:context=".RegisterNew">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="260sp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/dotanimation2" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/idregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:hint="Email"
+        android:inputType="text" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/passwordregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/registermeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="register Me"
+        android:backgroundTint="@color/navy_700"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+</LinearLayout>
